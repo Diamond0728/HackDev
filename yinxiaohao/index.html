@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Vue写的营销号生成器</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+</head>
+<body>
+	<div id="app" class="container">
+		<br>
+		<input class="form-control" placeholder="主体" v-model="a"><br>
+		<input class="form-control" placeholder="事件" v-model="b"><br>
+		<input class="form-control" placeholder="另一种说法" v-model="c"><br>
+		<div class="card">
+			<button id="cp" :data-clipboard-text="d">点我复制</button>
+			{{d}}
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript">
+var app = new Vue({
+  el: '#app',
+  data: {
+  	a: '', b: '', c:''
+  },
+  computed: {
+  	d: function () {
+  		return `${this.a}${this.b}是怎么回事呢？${this.a}相信大家都很熟悉，但是${this.a}${this.b}是怎么回事呢，下面就让小编带大家一起了解吧。${this.a}${this.b}，其实就是${this.c}，大家可能会很惊讶${this.a}怎么会${this.b}呢？但事实就是这样，小编也感到非常惊讶。这就是关于${this.a}${this.b}的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦。`
+  	}
+  }
+})
+
+const cp = new ClipboardJS('#cp')
+cp.on('success', function(e) {
+	alert("复制成功")
+})
+</script>
+</html>
