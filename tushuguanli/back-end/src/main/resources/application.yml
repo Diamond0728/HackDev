@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/library?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: rootroot
+    thymeleaf:
+       cache: false
+       mode: LEGACYHTML5
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # 初始连接数
+      initial-size: 5
+      # 最大激活数
+      max-active: 50
+      # 最大等待时间
+      max-wait: 3000
+      # 是否启用非公平锁
+      use-unfair-lock: true
+      # mysql 用 false | oracle 用 true
+      pool-prepared-statements: false
+mybatis:
+  type-aliases-package: com.group2.project.entity

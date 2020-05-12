@@ -1,0 +1,23 @@
+1，前端js框架:vue.js
+官方文档:
+
+2, 前端UI框架:vuetify
+官方文档:https://vuetifyjs.com/zh-Hans/
+
+3, 基于vue的PWA解决方案: Lavas
+官方文档:https://lavas.baidu.com/guide
+
+4, Ajax异步请求发送工具:axios
+简书:https://www.jianshu.com/p/df464b26ae58
+
+5, 图标绘制工具:vue-echarts
+github:https://github.com/ecomfe/vue-echarts/blob/master/README.zh_CN.md
+
+6, 用来绘制地图的:百度地图JavaScriptAPI
+官方文档:http://lbsyun.baidu.com/index.php?title=jspopular
+
+7, 百度地图WebAPI
+官方文档：http://lbsyun.baidu.com/index.php?title=webapi
+ak：rEtXV0F4Uq6kEHDHDxP9I4hFmEYND0R0
+获取地址编码:
+http://api.map.baidu.com/geocoder/v2/?address=上海市浦东区&output=json&ak=rEtXV0F4Uq6kEHDHDxP9I4hFmEYND0R0&callback=showLocation

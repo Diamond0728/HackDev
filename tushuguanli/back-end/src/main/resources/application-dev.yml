@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    druid:
+      # 启动监听、日志、防注入的功能
+      filters: stat,log4j,wall
+      # 验证的sql语句
+      validation-query: select 1
+      # 验证超时
+      validation-query-timeout: 3000
+      # 连接时是否开启验证
+      test-on-borrow: true
+      # 退还连接时是否开启验证
+      test-on-return: false
+      # 建议配置为true，不影响性能，并且保证安全性
+      test-while-idle: true
+      # Destroy线程会检测连接的间隔时间 || testWhileIdle的判断依据
+      time-between-eviction-runs-millis: 5000
+  devtools:
+    livereload:
+      enabled: true
