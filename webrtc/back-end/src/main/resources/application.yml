@@ -1,0 +1,39 @@
+server:
+  port: 5000
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/mblog?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: rootroot
+    thymeleaf:
+       cache: false
+       mode: LEGACYHTML5
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+       filters: stat
+       maxActive: 20
+       initialSize: 3
+       maxWait: 60000
+       minIdle: 1
+       timeBetweenEvictionRunsMillis: 60000
+       minEvictableIdleTimeMillis: 300000
+       validationQuery: select 'x'
+       testWhileIdle: true
+       testOnBorrow: false
+       testOnReturn: false
+       poolPreparedStatements: true
+       maxOpenPreparedStatements: 20
+mybatis:
+  type-aliases-package: com.group2.project.entity
+
+druid:
+  initialSize: 3
+  minIdle: 3
+  maxActive: 19
+  minEvictableIdleTimeMillis: 300000
+  testWhileIdle: true
+  testOnBorrow: false
+  testOnReturn: false
+  timeBetweenEvictionRunsMillis: 60000
+  maxWait: 60000

@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Class-Path: spring-boot-starter-json-2.0.0.RELEASE.jar spring-data-com
+ mons-2.0.5.RELEASE.jar spring-core-5.0.4.RELEASE.jar snakeyaml-1.19.j
+ ar thymeleaf-3.0.9.RELEASE.jar spring-messaging-5.0.4.RELEASE.jar log
+ 4j-to-slf4j-2.10.0.jar spring-webmvc-5.0.4.RELEASE.jar jandex-2.0.3.F
+ inal.jar spring-websocket-5.0.4.RELEASE.jar dom4j-1.6.1.jar HikariCP-
+ 2.7.8.jar xercesImpl-2.11.0.jar spring-tx-5.0.4.RELEASE.jar druid-1.0
+ .11.jar spring-boot-starter-websocket-2.0.0.RELEASE.jar spring-boot-a
+ utoconfigure-2.0.0.RELEASE.jar mybatis-spring-boot-starter-1.3.2.jar 
+ thymeleaf-extras-java8time-3.0.1.RELEASE.jar spring-web-5.0.4.RELEASE
+ .jar spring-boot-starter-thymeleaf-2.0.0.RELEASE.jar jackson-core-2.9
+ .4.jar hibernate-core-5.2.14.Final.jar classmate-1.3.4.jar spring-jcl
+ -5.0.4.RELEASE.jar javax.annotation-api-1.3.2.jar mybatis-spring-boot
+ -autoconfigure-1.3.2.jar shiro-web-1.2.5.jar druid-spring-boot-starte
+ r-1.1.0.jar tomcat-embed-el-8.5.28.jar validation-api-2.0.1.Final.jar
+  mybatis-3.4.6.jar spring-expression-5.0.4.RELEASE.jar log4j-api-2.10
+ .0.jar spring-boot-starter-tomcat-2.0.0.RELEASE.jar spring-jdbc-5.0.4
+ .RELEASE.jar shiro-spring-1.2.5.jar commons-beanutils-1.8.3.jar jul-t
+ o-slf4j-1.7.25.jar tomcat-embed-core-8.5.28.jar spring-boot-starter-2
+ .0.0.RELEASE.jar mybatis-spring-1.3.2.jar hibernate-validator-6.0.7.F
+ inal.jar jconsole.jar spring-aspects-5.0.4.RELEASE.jar javassist-3.22
+ .0-GA.jar attoparser-2.0.4.RELEASE.jar tools.jar jackson-annotations-
+ 2.9.0.jar jackson-module-parameter-names-2.9.4.jar thymeleaf-spring5-
+ 3.0.9.RELEASE.jar jackson-datatype-joda-2.9.4.jar unbescape-1.1.5.REL
+ EASE.jar spring-aop-5.0.4.RELEASE.jar javax.transaction-api-1.2.jar s
+ pring-boot-starter-aop-2.0.0.RELEASE.jar spring-boot-starter-jdbc-2.0
+ .0.RELEASE.jar aspectjweaver-1.8.13.jar xml-apis-1.4.01.jar spring-bo
+ ot-2.0.0.RELEASE.jar jboss-logging-3.3.2.Final.jar hibernate-jpa-2.1-
+ api-1.0.0.Final.jar mysql-connector-java-5.1.45.jar spring-boot-start
+ er-data-jpa-2.0.0.RELEASE.jar logback-core-1.2.3.jar shiro-core-1.2.5
+ .jar joda-time-2.9.9.jar logback-classic-1.2.3.jar nekohtml-1.9.22.ja
+ r jackson-databind-2.9.4.jar spring-orm-5.0.4.RELEASE.jar spring-bean
+ s-5.0.4.RELEASE.jar hibernate-commons-annotations-5.0.1.Final.jar jac
+ kson-datatype-jsr310-2.9.4.jar jackson-datatype-jdk8-2.9.4.jar slf4j-
+ api-1.7.25.jar spring-data-jpa-2.0.5.RELEASE.jar tomcat-embed-websock
+ et-8.5.28.jar spring-boot-starter-web-2.0.0.RELEASE.jar spring-contex
+ t-5.0.4.RELEASE.jar spring-boot-starter-logging-2.0.0.RELEASE.jar ant
+ lr-2.7.7.jar thymeleaf-extras-shiro-1.2.1.jar
+Main-Class: com.group.project.ProjectApplication
+

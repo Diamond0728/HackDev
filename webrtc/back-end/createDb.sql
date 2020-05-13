@@ -1,0 +1,1 @@
+CREATE DATABASE IF NOT EXISTS mblog default character set utf8 COLLATE utf8_general_ci;
