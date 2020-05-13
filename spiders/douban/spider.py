@@ -1,13 +1,11 @@
 # -*- coding: UTF-8 -*-
 import requests
-import sys
 import time
 import json
 import io
 import re
 from bs4 import BeautifulSoup
-reload(sys)
-sys.setdefaultencoding('utf-8')
+
 def getInfoByUrl(url):
     try:
         res = requests.get(url)
@@ -26,6 +24,7 @@ i=0
 url = 'https://movie.douban.com/j/new_search_subjects?'
 types = ['爱情', '动作', '恐怖']
 files = ['love', 'action', 'scary']
+user_agent = "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:68.0) Gecko/20100101 Firefox/68.0"
 while i < len(types):
     start = 0
     while start < 400:
@@ -35,7 +34,7 @@ while i < len(types):
         }
         targetUrl = url + 'start=' + str(start) + "&genres=" + types[i]
         try:
-            r = requests.get(targetUrl)
+            r = requests.get(targetUrl, headers={'User-Agent': user_agent})
         except:
             continue
         text = json.loads(r.text)
@@ -52,9 +51,9 @@ while i < len(types):
                 f.write(info + "\n")
             time.sleep(3)
             try:
-                print info
+                print(info)
             except:
-                print ""
+                print("")
         start += 80
     i += 1
 
